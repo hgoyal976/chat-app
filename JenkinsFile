@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/your-username/my-fullstack-app.git'
+            }
+        }
+
+        stage('Build Docker Images') {
+            steps {
+                sh 'docker build -t mitra-talks-fe .'
+            }
+        }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                sh 'kubectl apply -f k8s/deployment.yaml'
+            }
+        }
+    }
+}
