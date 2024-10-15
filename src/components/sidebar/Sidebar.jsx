@@ -1,5 +1,5 @@
 import Chats from "./Chats";
-import Profile from "./profile.jsx";
+import Profile from "./Profile";
 import SearchInput from "./searchInput";
 
 function Sidebar() {
