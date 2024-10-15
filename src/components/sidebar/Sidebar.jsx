@@ -1,6 +1,6 @@
 import Chats from "./Chats";
 import Profile from "./Profile";
-import SearchInput from "./searchInput";
+import SearchInput from "./SearchInput";
 
 function Sidebar() {
   return (
